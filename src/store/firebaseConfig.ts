@@ -1,6 +1,3 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
 interface firebaseConfigType {
   apiKey: string;
   authDomain: string;
@@ -11,16 +8,12 @@ interface firebaseConfigType {
   measurementId: string;
 }
 
-const firebaseConfig: firebaseConfigType = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId,
+export const firebaseConfig: firebaseConfigType = {
+  apiKey: "AIzaSyDlDa2tMsZipsp0j5KVK-vLs4PK5lR0AS0",
+  authDomain: "fir-frontend-eb98b.firebaseapp.com",
+  projectId: "fir-frontend-eb98b",
+  storageBucket: "fir-frontend-eb98b.appspot.com",
+  messagingSenderId: "310129059051",
+  appId: "1:310129059051:web:62a232a7c829012effcaae",
+  measurementId: "G-PFKLYQV7J7",
 };
-
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
